@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Bầu Tôm Cua Cá</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<div class="game-container">
+    <h1>Game Bầu Tôm Cua Cá</h1>
+
+    <div class="betting">
+        <h3>Đặt cược của bạn:</h3>
+        <label for="bet-amount">Số tiền cược: </label>
+        <input type="number" id="bet-amount" min="1" value="1000"><br>
+        <label for="bet-symbol1">Chọn biểu tượng 1: </label>
+        <select id="bet-symbol1">
+            <option value="bầu">Bầu</option>
+            <option value="tôm">Tôm</option>
+            <option value="cua">Cua</option>
+            <option value="cá">Cá</option>
+            <option value="gà">Gà</option>
+            <option value="nai">Nai</option>
+        </select><br>
+
+        <label for="bet-symbol2">Chọn biểu tượng 2: </label>
+        <select id="bet-symbol2">
+            <option value="bầu">Bầu</option>
+            <option value="tôm">Tôm</option>
+            <option value="cua">Cua</option>
+            <option value="cá">Cá</option>
+            <option value="gà">Gà</option>
+            <option value="nai">Nai</option>
+        </select><br>
+
+        <label for="bet-symbol3">Chọn biểu tượng 3: </label>
+        <select id="bet-symbol3">
+            <option value="bầu">Bầu</option>
+            <option value="tôm">Tôm</option>
+            <option value="cua">Cua</option>
+            <option value="cá">Cá</option>
+            <option value="gà">Gà</option>
+            <option value="nai">Nai</option>
+        </select><br>
+
+        <button onclick="rollDice()">Quay Kết Quả</button>
+    </div>
+
+    <div class="balance">
+        <h3>Số tiền của bạn: <span id="balance">5000</span> VND</h3>
+    </div>
+
+    <div class="dice">
+        <img id="dice1" src="blank.png" alt="dice1">
+        <img id="dice2" src="blink.png" alt="dice2">
+        <img id="dice3" src="blunk.png" alt="dice3">
+    </div>
+
+    <div id="result"></div>
+</div>
+
+<script src="bau_tom_cua_ca.js"></script>
+</body>
+</html>

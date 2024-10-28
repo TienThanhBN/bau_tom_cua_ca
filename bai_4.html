@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function kiemTraKyTuSo(kyTu) {
+        if (kyTu >= '0' && kyTu <= '20') {
+            return true;
+        }
+        return false;
+    }
+    let kyTuNhap = prompt("Nhập một ký tự:");
+    if (kyTuNhap.length === 1) {
+        let ketQua = kiemTraKyTuSo(kyTuNhap);
+        if (ketQua) {
+            alert(`${kyTuNhap} là ký tự số.`);
+        } else {
+            alert(`${kyTuNhap} không phải là ký tự số.`);
+        }
+    } else {
+        alert("Vui lòng nhập chỉ một ký tự.");
+    }
+
+</script>
+</body>
+</html>
